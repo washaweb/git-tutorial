@@ -1,0 +1,200 @@
+/* global */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #ee746b;
+    --hover-primary: #000;
+    --body-text: #888;
+}
+
+body {
+    margin: 0;
+    font-family: Abel, sans-serif;
+    color: var(--body-text);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active {
+    color: var(--hover-primary);
+}
+
+/* header */
+
+.logo {
+    display: block;
+    width: 480px;
+    margin: 40px auto;
+}
+
+/* type */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary);
+    text-transform: uppercase;
+
+}
+
+/* navigation */
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 40px auto;
+    display: flex;
+    width: 100%;
+    max-width: 980px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.main-nav ul:before, .main-nav ul:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    border-top: 3px solid var(--primary);
+    left: 0;
+    right: 0;
+}
+
+.main-nav ul:before {
+    top: 0;
+}
+
+.main-nav ul:after {
+    bottom: 0;
+}
+
+.main-nav ul li {
+    padding: 0 20px;
+}
+.main-nav ul li a {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.main-nav ul li.active a {
+    color: var(--hover-primary);
+}
+
+/* layout grid */
+.footer,
+.container {
+    max-width: 1010px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+.row {
+    display: flex;
+    margin: 0px -15px;
+}
+
+.col {
+    flex: 1;
+    padding: 0px 15px;
+}
+
+/* home */
+
+.carousel img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.hero-text {
+    padding: 40px;
+    text-align: center;
+}
+
+.blurbs-icons img {
+    display: block;
+    margin: 0px auto;
+}
+
+.blurbs-icons {
+    text-align: center;
+}
+
+
+/* about */
+
+/* news */
+
+/* contact */
+
+
+
+
+/* footer */
+.footer img {
+    max-width: 100%;
+    display: block;
+    margin: 40px auto;
+}
+
+
+/* animation intro logo, footer */
+
+.slide-fade-anim {
+    animation-name: slideFade;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+.fade-anim {
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+
+.delay-3ms {
+    animation-delay: .3s;
+}
+.delay-5ms {
+    animation-delay: .5s;
+}
+.delay-7ms{
+    animation-delay: .7s;
+}
+
+@keyframes slideFade {
+    0% {
+        transform: translateY(50%) scale(.8);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes fade {
+    0% {
+        transform: translateY(5%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

@@ -1,11 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon super site</title>
+    <title>GitTuto Design</title>
+    <meta name="description" content="GitTuto Design">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    modification sur la page index
+    <div include-html="includes/header.html"></div>
+
+    <main class="fade-anim delay-5ms">
+        <!-- home content here -->
+        <section class="container carousel">
+            <img src="img/refs/slide-lwsa-980x459.jpg" alt="reference 1">
+        </section>
+
+        <section class="container blurbs-icons">
+            <div class="row">
+                <div class="col">
+                    <img width="62" class="icon" src="img/icon-book.png" alt="book">
+                    <h2>Création graphique</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero non, ullam quo veritatis in minima
+                        fugit distinctio debitis velit quas nisi soluta incidunt aliquid eum fuga alias, magni doloribus
+                        quam?</p>
+                </div>
+                <div class="col">
+                    <img width="67" class="icon" src="img/icon-talk.png" alt="talk">
+                    <h2>Conseil en communication</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero non, ullam quo veritatis in minima
+                        fugit distinctio debitis velit quas nisi soluta incidunt aliquid eum fuga alias, magni doloribus
+                        quam?</p>
+                </div>
+                <div class="col">
+                    <img width="83" class="icon" src="img/icon-pen.png" alt="write">
+                    <h2>Conception-rédaction</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero non, ullam quo veritatis in minima
+                        fugit distinctio debitis velit quas nisi soluta incidunt aliquid eum fuga alias, magni doloribus
+                        quam?</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container hero-text">
+            <h3>Bienvenue sur le site Schlapala Design, le site de Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Unde quo necessitatibus molestiae.</h3>
+        </section>
+    </main>
+
+    <div include-html="includes/footer.html"></div>
+
+    <script>const currentpage = 'home';</script>
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>

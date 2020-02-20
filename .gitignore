@@ -1,0 +1,11 @@
+
+commandes-git.md
+syntaxe-markdown.md
+
+
+
+.Thumb
+.thumb
+.DS_Store
+node_modules/*
+*.zip
